@@ -59,12 +59,19 @@ En lugar de compilar “a mano”, Maven se encarga de todo siguiendo un archivo
 ### 📁 Estructura típica de un proyecto Maven
 
 proyecto
+
  ├─ src
+
  │  ├─ main
+
  │  │  └─ java
+
  │  └─ test
+
  │     └─ java
+
  ├─ pom.xml
+
  └─ README.md
 
 - src/main/java → código de la aplicación
