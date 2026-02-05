@@ -1,5 +1,7 @@
 package pio.daw;
 
+import pio.daw.data.Aula;
+
 public class App {
     public static void main(String[] args) {
         ArgParser argParser = null;
@@ -9,7 +11,8 @@ public class App {
             System.err.println(e.getMessage());
             System.exit(1);
         }
-        System.out.printf("El archivo CSV está en: %s\n", argParser.getPath());
-
+        Aula clase = Aula.fromFile(argParser.getPath().toFile());
+        clase.printAulaStats();
+        clase.printBarPlot();
     }
 }
